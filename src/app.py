@@ -34,11 +34,8 @@ st.markdown("""
 # Load the model
 # Note: Ensure the path is correct for your local environment
 model_path = "redwine_model_k_neighbors_cluster.sav"
-
-@st.cache_resource
-def load_model():
-    with open(model_path, "rb") as f:
-        model = pickle.load(f)
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
 
 class_dict = {
     "0": "Low Quality",
