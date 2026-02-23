@@ -33,7 +33,7 @@ st.markdown("""
 
 # Load the model
 # Note: Ensure the path is correct for your local environment
-model_path = "/workspaces/streamlit-web-app-project-csmb/models/redwine_model_k_neighbors_cluster.sav"
+model_path = "src/redwine_model_k_neighbors_cluster.sav"
 
 @st.cache_resource
 def load_model():
